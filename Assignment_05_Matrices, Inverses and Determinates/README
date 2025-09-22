@@ -1,0 +1,11 @@
+# Assignment 5- Matrices, Inverses, and Determinants
+
+#Description
+This assignment practices creating and inspecting in R, computing inverses and determinants and handling errors for singular or non-square matrices
+
+#How to Run
+1. Open 'Assignment5_Matrices.R' in RStudio
+2. Run the code line by line or source the script.
+3. Check the outputs:
+- A is 10x10 but singular (determinant is 0)
+- B is 10x100 (non-square, so inverse and determinant are undefined)
