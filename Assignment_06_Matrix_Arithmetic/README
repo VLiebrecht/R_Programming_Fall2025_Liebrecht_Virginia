@@ -1,0 +1,10 @@
+#Description
+This assignment practices basic matrix operations in R, creating diagonal matrices, and constructing a custom block-structured 5×5 matrix.
+
+#How to Run
+	1. Open 'Assignment 6-Matrix Arithmetic.R' in RStudio.
+	2. Run the code line by line or source the script.
+	3. Check the outputs:
+    -  A + B and A - B show elementwise matrix arithmetic.
+		-  diag(c(4,1,2,3)) creates a 4×4 diagonal matrix.
+    -  The custom 5×5 matrix is built by combining a column vector with a diagonal block to match the required structure.
