@@ -1,0 +1,11 @@
+#How to run
+1. Open Assignment 8 - plyr package in RStudio
+2. Run the code line by line
+3. Check the outputs
+- dataset student6 is imported using the read.table() function
+- the plyr package is loaded, and ddply() computes the averages of Grade by Sex, storing the results as the variable "gender_mean"
+- the text file, gender_mean.txt, is created
+- the grepl() & subset() functions filtered out all names that contain the letter "i".
+- The 2 new CSV files are exported
+  - i_students.csv - Names only
+  - i_students_full.csv - Full filtered dataset 
