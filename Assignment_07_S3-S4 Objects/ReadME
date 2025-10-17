@@ -1,0 +1,12 @@
+# Assignment 7- S3 & S4 Objects
+
+#Description
+This assignment explores S3 and S4 objects in R, covering how to create them, inspect their structures, and understand how generic functions dispatch methods differently across systems. 
+
+#How to Run
+1. Open Module 7 Assignment in RStudio
+2. Run the code line by line
+3. Check the outputs:
+  - Dataset PopStars_Data is created and inspected through head (), str() and summary ()
+  - An S3 object (popstar_s3) is created using a list and assigned a class attribute
+  - An S4 Class (popstar_s4) is formally defined with setClass() and instantiated with new()
