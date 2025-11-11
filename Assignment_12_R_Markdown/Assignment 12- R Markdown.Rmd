@@ -1,0 +1,64 @@
+---
+title: "My R Markdown"
+author: "Virginia Liebrecht"
+date: "2025-11-11"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+R Markdown is a powerful format that combines text, R code and output (such as tables or plots) in a single, reproducible document.
+It uses a simple Markdown syntax for formatting text and integrates R code chunks to automatically include data analysis outputs. 
+
+When you click the Knit button in RStudio, the document is rendered into HTML, PDF, or Word, and blends code, text, and visuals seamlessly.
+
+
+## Example 1: Data Summary
+Here is an example, using the built in cars dataset, which records the speed of cars and their stopping distance. 
+
+```{r cars}
+summary(cars)
+```
+
+The summary shows descriptive statistics such as the minimum, maximum, mean and quartiles for each variable. 
+
+## Markdown and LaTex Examples 
+
+You can include formatted text and mathematical expressions easily in R Markdown
+Inline math example: $E = mc^2$
+
+Displayed equation example (Quadratic Formula):
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+This shows how LaTeX can render fractions, square roots, and symbols beautifully in reports.    
+    
+## Example 2: Including Plots
+Here is an example of a basic plot using the built-in pressure dataset:
+
+```{r pressure, echo=FALSE}
+plot(pressure,
+     main = "Pressure vs Temperature",
+     xlab = "Temperature (C)",
+     ylab = "Pressure (mm of Hg)",
+     col = "blue",
+     pch = 19)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+## Reflection
+Using R Markdown makes it simple to combine narrative, code, and results in one document. 
+It's especially useful for reproducible research - if your data or code changes, the whole document updates automatically.
+
+What I learned:
+- How Markdown syntax and LaTeX math work together.
+- How code chunks display both input and output.
+- The benefit of knitting to HTML for visual clarity.
+
+Overall, R Markdown is a great tool for blending text and computation, which is much easier than copying results manually into reports. 
