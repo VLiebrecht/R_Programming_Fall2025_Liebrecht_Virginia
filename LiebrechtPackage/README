@@ -1,0 +1,39 @@
+#LiebrechtPackage
+### Functions for Data Cleaning, Summarization, Outlier Detection, and Correlation Heat Map plotting
+--
+## Overview 
+** LiebrechtPackage** is an R Package designed to simplify the process of exploratory data analysis. 
+It supplies reusable functions for data cleaning, summarizing numeric variables, detecting outliers and plotting correlations. 
+
+The goal with this package is to make the early stages of data analysis faster, cleaner, and more reproducible. 
+--
+#Installation 
+To install the package directly from GitHub, use:
+
+```r
+## Install devtools (if not prviously installed)
+install.packages("devtools")
+
+##Install LiebrechtPackage from Github
+devtools::install_github("VLiebrecht/LiebrechtPackage")
+
+#Load the Package
+library(LiebrechtPackage)
+--
+## Main Functions
+
+| Function | Description |
+| ---------| ----------- |
+| `clean_na(df)` | Replaces missing numeric values (`NA`) with column medians using `dplyr::across()`
+| `summarize_num(df)` | Generates summary statistics (min, q1, median, mean, q3, max, sd) for all numeric columns |
+| `detect_outlier(x)` | Flags outliers in a numeric vector using the IQR (interquartile range) |
+| `lp_cor (df)` | Creates a correlation matrix object of class named `lp_cor` |
+| `plot(lp_cor)` | S3 method: plots the correlation heatmap for the `lp_cor` objects | 
+| `plot_cor_heatmap` | Creates a correlation heatmap directly from a dataframe |
+
+--
+## Dependencies 
+The package relies on the following R libraries:
+- **dplyr** - for data manipulation and transformation
+- **ggplot2** - for plotting and heatmap visualization 
+- **stats** - for median, quantile, and sd calculations
