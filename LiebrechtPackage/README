@@ -21,6 +21,7 @@ devtools::install_github("VLiebrecht/LiebrechtPackage")
 library(LiebrechtPackage)
 --
 ## Main Functions
+This package provides 6 unique functions:
 
 | Function | Description |
 | ---------| ----------- |
@@ -37,3 +38,28 @@ The package relies on the following R libraries:
 - **dplyr** - for data manipulation and transformation
 - **ggplot2** - for plotting and heatmap visualization 
 - **stats** - for median, quantile, and sd calculations
+
+--
+## Metadata Fields from DESCRIPTION
+Package: LiebrechtPackage
+Title: Functions for Data Cleaning, Summarization, Outlier Detection, and Visualization
+Version: 0.1.0
+Authors@R: 
+    person("Virginia", "Liebrecht", , "vbliebrecht@usf.edu", role = c("aut", "cre"))
+Description: Provides reusable functions for exploratory data analysis, including tools for handling missing values, summarizing numeric variables, detecting outliers, and visualizing the correlation through heatmaps. These utilities will streamline common data processing and diagnostic steps to support efficient, transparent, and reproducible data analysis.  
+Imports: dplyr, ggplot2
+Suggests: testthat (>= 3.0.0),
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/VLiebrecht/LiebrechtPackage 
+BugReports: https://github.com/VLiebrecht/LiebrechtPackage/issues
+
+-- 
+## License
+This package uses the MIT License, allowing open use and modification when credit is given to the original author. 
+--
+## Object System and Methods
+The LiebrechtPackage implements the S3 object system in R.
+Specifically, the lp_cor object (Liebrecht Correlation object) includes two S3 methods:
+- print.lp_cor() - Displays a summary of the correlation matrix
+- plot.lp_cor() - Creates a correlation heatmap 
